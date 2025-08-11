@@ -1,1 +1,14 @@
+unzip-on-push.yml
+name: Unzip Uploaded ZIP Files
 
+on:
+  push:
+    paths:
+      - '**.zip'
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
