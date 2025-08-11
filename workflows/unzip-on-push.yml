@@ -1,4 +1,3 @@
-unzip-on-push.yml
 name: Unzip Uploaded ZIP Files
 
 on:
